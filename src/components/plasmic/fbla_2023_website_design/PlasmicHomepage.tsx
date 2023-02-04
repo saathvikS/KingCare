@@ -40,6 +40,8 @@ import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import
 import Footer from "../../Footer"; // plasmic-import: EdywSuH81fY/component
 import FooterBottom from "../../FooterBottom"; // plasmic-import: 5nUaKoc582/component
 
+import { useScreenVariants as useScreenVariantsnTHrtOlDoRnz } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nTHrtOLDoRNZ/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_fbla_2023_website_design.module.css"; // plasmic-import: 3gFepDhbdVBaDHe3ms9CNF/projectcss
@@ -106,6 +108,10 @@ function PlasmicHomepage__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsnTHrtOlDoRnz()
+  });
 
   return (
     <React.Fragment>
@@ -345,31 +351,37 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.column__z8DxI
                         )}
                       >
-                        <button
+                        <a
                           className={classNames(
                             projectcss.all,
-                            projectcss.button,
+                            projectcss.a,
                             projectcss.__wab_text,
-                            sty.button__cTuQs
+                            sty.link__cTuQs
                           )}
+                          href={`/services`}
                         >
-                          {"Education"}
-                        </button>
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Education"
+                            : "\n\nEducation"}
+                        </a>
                       </div>
 
                       <div
                         className={classNames(projectcss.all, sty.column__fh1E)}
                       >
-                        <button
+                        <a
                           className={classNames(
                             projectcss.all,
-                            projectcss.button,
+                            projectcss.a,
                             projectcss.__wab_text,
-                            sty.button__fjC9
+                            sty.link__fjC9
                           )}
+                          href={`/services`}
                         >
-                          {"Housing"}
-                        </button>
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Housing"
+                            : "\n\nHousing"}
+                        </a>
                       </div>
 
                       <div
@@ -378,16 +390,20 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.column__eg14Q
                         )}
                       >
-                        <button
+                        <a
                           className={classNames(
                             projectcss.all,
-                            projectcss.button,
+                            projectcss.a,
                             projectcss.__wab_text,
-                            sty.button__sJxTf
+                            sty.link__sJxTf
                           )}
+                          disabled={true}
+                          href={`/services`}
                         >
-                          {"Transportation"}
-                        </button>
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Transportation"
+                            : "\n\nTransportation"}
+                        </a>
                       </div>
                     </div>
                   </ParallaxWrapper>
