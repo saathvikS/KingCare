@@ -286,240 +286,231 @@ function PlasmicTakeAction__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___8C7P4)}
+                className={classNames(projectcss.all, sty.freeBox__olz4R)}
               >
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__olz4R)}
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__xnd7B)}
+                  duration={2000 as const}
+                  triggerOnce={false}
                 >
-                  <Reveal
-                    className={classNames("__wab_instance", sty.reveal__xnd7B)}
-                    duration={2000 as const}
-                    triggerOnce={false}
+                  <ParallaxWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.scrollParallax__ml9Al
+                    )}
+                    speed={5 as const}
                   >
-                    <ParallaxWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.scrollParallax__ml9Al
-                      )}
-                      speed={5 as const}
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__vl6G4)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
+                      <h2
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__vl6G4
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2___2Ro71
+                        )}
+                        id={"volunteer" as const}
+                      >
+                        {"Merchandise"}
+                      </h2>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__szNoo
                         )}
                       >
-                        <h2
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h2,
-                            projectcss.__wab_text,
-                            sty.h2___2Ro71
-                          )}
-                          id={"volunteer" as const}
-                        >
-                          {"Merchandise"}
-                        </h2>
+                        {
+                          "Support our cause while getting something in return. Choose from our array of cool swag and show off your support for KingCare!"
+                        }
+                      </div>
+                    </p.Stack>
 
+                    <Slider
+                      data-plasmic-name={"slider"}
+                      data-plasmic-override={overrides.slider}
+                      autoplay={true}
+                      autoplaySpeed={2000 as const}
+                      centerMode={false}
+                      className={classNames("__wab_instance", sty.slider)}
+                      dots={true}
+                      draggable={false}
+                      pauseOnDotsHover={true}
+                      pauseOnFocus={false}
+                      pauseOnHover={false}
+                      slidesToShow={3 as const}
+                      useCSS={true}
+                      useTransform={true}
+                      variableWidth={false}
+                      vertical={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : undefined
+                      }
+                    >
+                      {true ? (
                         <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__szNoo
+                            sty.freeBox__rVpPv
                           )}
                         >
-                          {
-                            "Support our cause while getting something in return. Choose from our array of cool swag and show off your support for KingCare!"
-                          }
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__e4RFq)}
+                            displayHeight={"507px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"100%" as const}
+                            src={{
+                              src: kingcareTshirtpng4MyqCvz2N,
+                              fullWidth: 874,
+                              fullHeight: 1051,
+                              aspectRatio: undefined
+                            }}
+                          />
+
+                          <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__vYdu
+                            )}
+                            link={
+                              "https://king-care.swell.store/buy/n35KjuA6" as const
+                            }
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__cT2Kl
+                              )}
+                            >
+                              {"Buy Now"}
+                            </div>
+                          </Button>
                         </div>
-                      </p.Stack>
+                      ) : null}
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__yuGv
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__q04Mh)}
+                            displayHeight={"507px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"100%" as const}
+                            src={{
+                              src: kingcareHoodiepng8PIh4Sm9U,
+                              fullWidth: 967,
+                              fullHeight: 1048,
+                              aspectRatio: undefined
+                            }}
+                          />
 
-                      <Slider
-                        data-plasmic-name={"slider"}
-                        data-plasmic-override={overrides.slider}
-                        autoplay={true}
-                        autoplaySpeed={2000 as const}
-                        centerMode={false}
-                        className={classNames("__wab_instance", sty.slider)}
-                        dots={true}
-                        draggable={false}
-                        pauseOnDotsHover={true}
-                        pauseOnFocus={false}
-                        pauseOnHover={false}
-                        slidesToShow={3 as const}
-                        useCSS={true}
-                        useTransform={true}
-                        variableWidth={false}
-                        vertical={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : undefined
-                        }
-                      >
-                        {true ? (
-                          <div
+                          <Button
                             className={classNames(
-                              projectcss.all,
-                              sty.freeBox__rVpPv
+                              "__wab_instance",
+                              sty.button__lgCtm
                             )}
+                            link={
+                              "https://king-care.swell.store/buy/8LjVbBbu" as const
+                            }
                           >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__e4RFq)}
-                              displayHeight={"507px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"100%" as const}
-                              src={{
-                                src: kingcareTshirtpng4MyqCvz2N,
-                                fullWidth: 874,
-                                fullHeight: 1051,
-                                aspectRatio: undefined
-                              }}
-                            />
+                            {"Buy Now"}
+                          </Button>
+                        </div>
+                      ) : null}
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ieipZ
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__xgmAb)}
+                            displayHeight={"507px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            src={{
+                              src: kingcareBackpackpngL3TtYkib8,
+                              fullWidth: 874,
+                              fullHeight: 940,
+                              aspectRatio: undefined
+                            }}
+                          />
 
-                            <Button
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button__vYdu
-                              )}
-                              link={
-                                "https://king-care.swell.store/buy/n35KjuA6" as const
-                              }
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__cT2Kl
-                                )}
-                              >
-                                {"Buy Now"}
-                              </div>
-                            </Button>
-                          </div>
-                        ) : null}
-                        {true ? (
-                          <div
+                          <Button
                             className={classNames(
-                              projectcss.all,
-                              sty.freeBox__yuGv
+                              "__wab_instance",
+                              sty.button___4LD4
                             )}
+                            link={
+                              "https://king-care.swell.store/buy/e9DVv1q5" as const
+                            }
                           >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__q04Mh)}
-                              displayHeight={"507px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"100%" as const}
-                              src={{
-                                src: kingcareHoodiepng8PIh4Sm9U,
-                                fullWidth: 967,
-                                fullHeight: 1048,
-                                aspectRatio: undefined
-                              }}
-                            />
+                            {"Buy Now"}
+                          </Button>
+                        </div>
+                      ) : null}
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__akuK2
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__pVuRp)}
+                            displayHeight={"507px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            src={{
+                              src: kingcareHatpngUwCeMBvph,
+                              fullWidth: 1294,
+                              fullHeight: 786,
+                              aspectRatio: undefined
+                            }}
+                          />
 
-                            <Button
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button__lgCtm
-                              )}
-                              link={
-                                "https://king-care.swell.store/buy/8LjVbBbu" as const
-                              }
-                            >
-                              {"Buy Now"}
-                            </Button>
-                          </div>
-                        ) : null}
-                        {true ? (
-                          <div
+                          <Button
                             className={classNames(
-                              projectcss.all,
-                              sty.freeBox__ieipZ
+                              "__wab_instance",
+                              sty.button__zwuaj
                             )}
+                            link={
+                              "https://king-care.swell.store/buy/LvD9DWQx" as const
+                            }
                           >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__xgmAb)}
-                              displayHeight={"507px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              src={{
-                                src: kingcareBackpackpngL3TtYkib8,
-                                fullWidth: 874,
-                                fullHeight: 940,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <Button
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button___4LD4
-                              )}
-                              link={
-                                "https://king-care.swell.store/buy/e9DVv1q5" as const
-                              }
-                            >
-                              {"Buy Now"}
-                            </Button>
-                          </div>
-                        ) : null}
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__akuK2
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__pVuRp)}
-                              displayHeight={"507px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"auto" as const}
-                              src={{
-                                src: kingcareHatpngUwCeMBvph,
-                                fullWidth: 1294,
-                                fullHeight: 786,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <Button
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button__zwuaj
-                              )}
-                              link={
-                                "https://king-care.swell.store/buy/LvD9DWQx" as const
-                              }
-                            >
-                              {"Buy Now"}
-                            </Button>
-                          </div>
-                        ) : null}
-                      </Slider>
-                    </ParallaxWrapper>
-                  </Reveal>
-                </p.Stack>
+                            {"Buy Now"}
+                          </Button>
+                        </div>
+                      ) : null}
+                    </Slider>
+                  </ParallaxWrapper>
+                </Reveal>
               </p.Stack>
             </div>
           ) : null}
