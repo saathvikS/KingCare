@@ -114,7 +114,9 @@ function PlasmicFooterBottom__RenderFunc(props: {
             sty.text
           )}
         >
-          {"© KingCare. All rights reserved. Built with❤️."}
+          {
+            "© KingCare. This website contains copyrighted materials used under the multimedia guidelines and fair use exceptions of US copyright law, further use is prohibited. Built with❤️."
+          }
         </div>
       </div>
     </div>
