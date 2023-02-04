@@ -1,0 +1,22 @@
+.root {
+  background: var(--token-Hkjdx-yXf);
+  width: 100px;
+  height: 40px;
+  position: relative;
+  padding-top: 8px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  color: var(--token-k83QV_imD);
+  flex-wrap: wrap;
+  align-items: stretch;
+  border-radius: 6px;
+}
+.root:hover {
+  background: var(--token-Hkjdx-yXf);
+}
+.slotTargetChildren {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.root {
+  width: 200px;
+  height: 30px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  padding-bottom: 0px;
+  text-decoration-line: none;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 6px;
+  border: 1px solid #000000;
+}

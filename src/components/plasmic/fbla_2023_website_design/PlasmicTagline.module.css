@@ -1,0 +1,158 @@
+.headingTagline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  align-content: unset;
+  background: radial-gradient(
+        ellipse 80% 60% at 18% 17%,
+        #79d8ede6 0%,
+        var(--token-8UNFBsAK-) 100%
+      )
+      0% 0% / 100% 100% repeat,
+    url("./images/depositphotos156367322S2019Jpeg.jpeg") top 50% left 50% / cover repeat;
+  height: 600px;
+  position: relative;
+  min-width: 0;
+  padding: 25px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .headingTagline {
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+}
+.freeBox__bHxR {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  height: 100%;
+  min-height: 0;
+}
+.freeBox__bHxR > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 0;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__bHxR > :global(.__wab_flex-container) > *,
+.freeBox__bHxR > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__bHxR > :global(.__wab_flex-container) > picture > img,
+.freeBox__bHxR
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.h1 {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  white-space: pre-wrap;
+  user-select: text;
+}
+.slotTargetChildren > :global(.__wab_text),
+.slotTargetChildren > :global(.__wab_slot-string-wrapper),
+.slotTargetChildren > :global(.__wab_slot) > :global(.__wab_text),
+.slotTargetChildren
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper),
+.slotTargetChildren
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetChildren
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper),
+.slotTargetChildren
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetChildren
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper) {
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetChildren {
+    font-size: 40px;
+  }
+}
+.freeBox__dK6 {
+  position: relative;
+  height: auto;
+  max-width: none;
+  margin-bottom: 14px;
+  padding-bottom: 0px;
+  margin-top: calc(0px + 16px) !important;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__dK6 {
+    margin-top: calc(0px + 16px) !important;
+  }
+}
+.slotTargetSlot {
+  font-family: "Mako", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--token-IQATk1fOJ);
+  text-align: left;
+  text-transform: none;
+  line-height: 1.7;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+}
+.slotTargetSlot > :global(.__wab_text),
+.slotTargetSlot > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_text),
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper) {
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetSlot {
+    font-size: 18px;
+  }
+}
