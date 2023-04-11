@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.208",
+    "@plasmicapp/cli": "^0.1.256",
     "@plasmicapp/host": "^1.0.101",
-    "@plasmicapp/react-web": "^0.2.151",
+    "@plasmicapp/react-web": "^0.2.192",
     "@plasmicpkgs/lottie-react": "^0.0.86",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.109",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.101",
