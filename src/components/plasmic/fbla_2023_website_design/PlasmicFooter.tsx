@@ -302,6 +302,7 @@ function PlasmicFooter__RenderFunc(props: {
                   projectcss.__wab_text,
                   sty.link__pktyb
                 )}
+                href={`/copyright-information`}
               >
                 {"Copyright Information"}
               </a>
@@ -312,6 +313,7 @@ function PlasmicFooter__RenderFunc(props: {
                   projectcss.__wab_text,
                   sty.link__v6FQw
                 )}
+                href={`/privacy-policy`}
               >
                 {"Privacy Policy"}
               </a>
@@ -322,7 +324,7 @@ function PlasmicFooter__RenderFunc(props: {
                   projectcss.__wab_text,
                   sty.link___2NebZ
                 )}
-                href={"#" as const}
+                href={`/terms-of-service`}
               >
                 {"Terms of Service"}
               </a>

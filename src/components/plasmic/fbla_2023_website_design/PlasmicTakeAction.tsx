@@ -355,7 +355,11 @@ function PlasmicTakeAction__RenderFunc(props: {
                           <p.PlasmicImg
                             alt={""}
                             className={classNames(sty.img__e4RFq)}
-                            displayHeight={"507px" as const}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("507px" as const)
+                            }
                             displayMaxHeight={"none" as const}
                             displayMaxWidth={"100%" as const}
                             displayMinHeight={"0" as const}
@@ -400,7 +404,11 @@ function PlasmicTakeAction__RenderFunc(props: {
                           <p.PlasmicImg
                             alt={""}
                             className={classNames(sty.img__q04Mh)}
-                            displayHeight={"507px" as const}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("507px" as const)
+                            }
                             displayMaxHeight={"none" as const}
                             displayMaxWidth={"100%" as const}
                             displayMinHeight={"0" as const}
@@ -437,7 +445,11 @@ function PlasmicTakeAction__RenderFunc(props: {
                           <p.PlasmicImg
                             alt={""}
                             className={classNames(sty.img__xgmAb)}
-                            displayHeight={"507px" as const}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("507px" as const)
+                            }
                             displayMaxHeight={"none" as const}
                             displayMaxWidth={"100%" as const}
                             displayMinHeight={"0" as const}
@@ -474,7 +486,11 @@ function PlasmicTakeAction__RenderFunc(props: {
                           <p.PlasmicImg
                             alt={""}
                             className={classNames(sty.img__pVuRp)}
-                            displayHeight={"507px" as const}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("507px" as const)
+                            }
                             displayMaxHeight={"none" as const}
                             displayMaxWidth={"100%" as const}
                             displayMinHeight={"0" as const}

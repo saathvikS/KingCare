@@ -37,6 +37,7 @@ import Tagline from "../../Tagline"; // plasmic-import: lHrnwZQKsB/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import Button from "../../Button"; // plasmic-import: GnNzqwgKsTt/component
 import Footer from "../../Footer"; // plasmic-import: EdywSuH81fY/component
 import FooterBottom from "../../FooterBottom"; // plasmic-import: 5nUaKoc582/component
 
@@ -47,6 +48,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_fbla_2023_website_design.module.css"; // plasmic-import: 3gFepDhbdVBaDHe3ms9CNF/projectcss
 import sty from "./PlasmicGetInTouch.module.css"; // plasmic-import: ahO08vCw02/css
 
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: hQ6DylM3FaV/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: AFYVcv3lQLV/icon
 import image7UwWYdPeKtDl from "./images/image7.jpeg"; // plasmic-import: UwW_ydPEKtDL/picture
 
 export type PlasmicGetInTouch__VariantMembers = {};
@@ -63,9 +66,10 @@ export type PlasmicGetInTouch__OverridesType = {
   pageBanner?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   tagline?: p.Flex<typeof Tagline>;
-  text?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
   columns?: p.Flex<"div">;
   container4?: p.Flex<"div">;
+  button?: p.Flex<typeof Button>;
   img?: p.Flex<typeof p.PlasmicImg>;
   footer?: p.Flex<typeof Footer>;
   footerBottom?: p.Flex<typeof FooterBottom>;
@@ -149,12 +153,10 @@ function PlasmicGetInTouch__RenderFunc(props: {
             }
           >
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__h7TvP
               )}
             >
               {"Get in Touch"}
@@ -199,10 +201,9 @@ function PlasmicGetInTouch__RenderFunc(props: {
                   triggerOnce={false}
                 >
                   <Embed
-                    className={classNames(
-                      "__wab_instance",
-                      sty.embedHtml__jwlKa
-                    )}
+                    data-plasmic-name={"embedHtml"}
+                    data-plasmic-override={overrides.embedHtml}
+                    className={classNames("__wab_instance", sty.embedHtml)}
                     code={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? ('<iframe src="https://www.google.com/maps/d/embed?mid=1YdZGbSPxpRcsoGQK_-uMkW04xJQfEZQ&ehbc=2E312F" width="300" height="390"></iframe>' as const)
@@ -249,17 +250,51 @@ function PlasmicGetInTouch__RenderFunc(props: {
                           {"Send us a message"}
                         </h2>
                       </ParallaxWrapper>
-                      <Embed
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.embedHtml__oLg2W
+                          projectcss.all,
+                          sty.freeBox__zvqIk
                         )}
-                        code={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ('<!-- Begin Mailchimp Signup Form -->\r\n<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">\r\n<style type="text/css">\r\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\r\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\r\n</style>\r\n<div id="mc_embed_signup"style="font-family: Mako;">\r\n    <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=e2b4dbc133397d49c88885733&amp;id=4312483685&amp;f_id=0022d1e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n        <div id="mc_embed_signup_scroll">\r\n        \r\n        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>\r\n\t<span id="mce-EMAIL-HELPERTEXT" class="helper_text">Ex. s-ssomujayabalan@lwsd.org</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-FNAME">First Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>\r\n\t<span id="mce-FNAME-HELPERTEXT" class="helper_text">Ex. Saathvik</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>\r\n\t<span id="mce-LNAME-HELPERTEXT" class="helper_text">Ex. Somujayabalan</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-MMERGE7">Subject  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="MMERGE7" class="required" id="mce-MMERGE7" required>\r\n\t<span id="mce-MMERGE7-HELPERTEXT" class="helper_text">Subject of your message</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-MMERGE6">Message  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="MMERGE6" class="required" id="mce-MMERGE6" required>\r\n\t<span id="mce-MMERGE6-HELPERTEXT" class="helper_text">Send your message to us in here</span>\r\n</div>\r\n\t<div id="mce-responses" class="clear foot">\r\n\t\t<div class="response" id="mce-error-response" style="display:none"></div>\r\n\t\t<div class="response" id="mce-success-response" style="display:none"></div>\r\n\t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2b4dbc133397d49c88885733_4312483685" tabindex="-1" value=""></div>\r\n        <div class="optionalParent">\r\n            <div class="clear foot">\r\n                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0b6298;">\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>\r\n</div>\r\n<script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'ADDRESS\';ftypes[3]=\'address\';fnames[4]=\'PHONE\';ftypes[4]=\'phone\';fnames[5]=\'BIRTHDAY\';ftypes[5]=\'birthday\';fnames[6]=\'MMERGE6\';ftypes[6]=\'text\';fnames[7]=\'MMERGE7\';ftypes[7]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\r\n<!--End mc_embed_signup-->' as const)
-                            : ('<!-- Begin Mailchimp Signup Form -->\r\n<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">\r\n<style type="text/css">\r\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\r\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\r\n</style>\r\n<div id="mc_embed_signup"style="font-family: Mako;">\r\n    <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=e2b4dbc133397d49c88885733&amp;id=4312483685&amp;f_id=0022d1e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n        <div id="mc_embed_signup_scroll">\r\n        \r\n        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>\r\n\t<span id="mce-EMAIL-HELPERTEXT" class="helper_text">Ex. s-ssomujayabalan@lwsd.org</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-FNAME">First Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>\r\n\t<span id="mce-FNAME-HELPERTEXT" class="helper_text">Ex. Saathvik</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>\r\n\t<span id="mce-LNAME-HELPERTEXT" class="helper_text">Ex. Somujayabalan</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-MMERGE7">Subject  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="MMERGE7" class="required" id="mce-MMERGE7" required>\r\n\t<span id="mce-MMERGE7-HELPERTEXT" class="helper_text">Subject of your message</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-MMERGE6">Message  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="MMERGE6" class="required" id="mce-MMERGE6" required>\r\n\t<span id="mce-MMERGE6-HELPERTEXT" class="helper_text">Send your message to us in here</span>\r\n</div>\r\n\t<div id="mce-responses" class="clear foot">\r\n\t\t<div class="response" id="mce-error-response" style="display:none"></div>\r\n\t\t<div class="response" id="mce-success-response" style="display:none"></div>\r\n\t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2b4dbc133397d49c88885733_4312483685" tabindex="-1" value=""></div>\r\n        <div class="optionalParent">\r\n            <div class="clear foot">\r\n                <input type="submit" value="Send Message" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0b6298;">\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>\r\n</div>\r\n<script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'ADDRESS\';ftypes[3]=\'address\';fnames[4]=\'PHONE\';ftypes[4]=\'phone\';fnames[5]=\'BIRTHDAY\';ftypes[5]=\'birthday\';fnames[6]=\'MMERGE6\';ftypes[6]=\'text\';fnames[7]=\'MMERGE7\';ftypes[7]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\r\n<!--End mc_embed_signup-->' as const)
-                        }
-                      />
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__clyOs
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#000000" }}
+                            >
+                              {
+                                "If you have any questions, concerns or comments please feel free to send us a message. Allow the Kingcare team up to 48 hours to respond to any inquiries."
+                              }
+                            </span>
+                          </React.Fragment>
+                        </div>
+                        <Button
+                          data-plasmic-name={"button"}
+                          data-plasmic-override={overrides.button}
+                          className={classNames("__wab_instance", sty.button)}
+                          link={
+                            "https://us21.list-manage.com/contact-form?u=e2b4dbc133397d49c88885733&form_id=7b30974ca1e564f2dc2d493c556a5aeb\n\n" as const
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__fWrCt
+                            )}
+                          >
+                            {"Send"}
+                          </div>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                   <div
@@ -314,19 +349,21 @@ const PlasmicDescendants = {
     "pageBanner",
     "header",
     "tagline",
-    "text",
+    "embedHtml",
     "columns",
     "container4",
+    "button",
     "img",
     "footer",
     "footerBottom"
   ],
   pageBanner: ["pageBanner", "header"],
   header: ["header"],
-  tagline: ["tagline", "text"],
-  text: ["text"],
-  columns: ["columns", "container4", "img"],
-  container4: ["container4"],
+  tagline: ["tagline"],
+  embedHtml: ["embedHtml"],
+  columns: ["columns", "container4", "button", "img"],
+  container4: ["container4", "button"],
+  button: ["button"],
   img: ["img"],
   footer: ["footer"],
   footerBottom: ["footerBottom"]
@@ -339,9 +376,10 @@ type NodeDefaultElementType = {
   pageBanner: "div";
   header: typeof Header;
   tagline: typeof Tagline;
-  text: "div";
+  embedHtml: typeof Embed;
   columns: "div";
   container4: "div";
+  button: typeof Button;
   img: typeof p.PlasmicImg;
   footer: typeof Footer;
   footerBottom: typeof FooterBottom;
@@ -410,9 +448,10 @@ export const PlasmicGetInTouch = Object.assign(
     pageBanner: makeNodeComponent("pageBanner"),
     header: makeNodeComponent("header"),
     tagline: makeNodeComponent("tagline"),
-    text: makeNodeComponent("text"),
+    embedHtml: makeNodeComponent("embedHtml"),
     columns: makeNodeComponent("columns"),
     container4: makeNodeComponent("container4"),
+    button: makeNodeComponent("button"),
     img: makeNodeComponent("img"),
     footer: makeNodeComponent("footer"),
     footerBottom: makeNodeComponent("footerBottom"),

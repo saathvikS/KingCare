@@ -32,6 +32,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import DonateButton from "../../DonateButton"; // plasmic-import: 8qGb6ylmZB/component
 
 import { useScreenVariants as useScreenVariantsnTHrtOlDoRnz } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nTHrtOLDoRNZ/globalVariant
@@ -57,6 +58,7 @@ export type PlasmicHeader__OverridesType = {
   header?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   aboutUs?: p.Flex<"a">;
+  embedHtml?: p.Flex<typeof Embed>;
   donateButton?: p.Flex<typeof DonateButton>;
 };
 
@@ -274,6 +276,16 @@ function PlasmicHeader__RenderFunc(props: {
               />
             ) : null}
           </p.Stack>
+          <div className={classNames(projectcss.all, sty.freeBox__yeU69)}>
+            <Embed
+              data-plasmic-name={"embedHtml"}
+              data-plasmic-override={overrides.embedHtml}
+              className={classNames("__wab_instance", sty.embedHtml)}
+              code={
+                '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
+              }
+            />
+          </div>
         </p.Stack>
       </p.Stack>
       <DonateButton
@@ -286,9 +298,10 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  header: ["header", "img", "aboutUs", "donateButton"],
+  header: ["header", "img", "aboutUs", "embedHtml", "donateButton"],
   img: ["img"],
   aboutUs: ["aboutUs"],
+  embedHtml: ["embedHtml"],
   donateButton: ["donateButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -298,6 +311,7 @@ type NodeDefaultElementType = {
   header: "div";
   img: typeof p.PlasmicImg;
   aboutUs: "a";
+  embedHtml: typeof Embed;
   donateButton: typeof DonateButton;
 };
 
@@ -363,6 +377,7 @@ export const PlasmicHeader = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     aboutUs: makeNodeComponent("aboutUs"),
+    embedHtml: makeNodeComponent("embedHtml"),
     donateButton: makeNodeComponent("donateButton"),
 
     // Metadata about props expected for PlasmicHeader

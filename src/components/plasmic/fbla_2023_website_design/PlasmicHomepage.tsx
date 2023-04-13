@@ -153,7 +153,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "KingCare serves kids, seniors, families, and people with disabilities who actively face hardship brought on by inequity in King County. Join our cause now!"
+                    "KingCare serves children who face educational hardship brought on by inequity in King County. Join our cause now!"
                   }
                 </div>
               }
@@ -209,7 +209,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                     >
                       {
-                        "Our mission is to empower and improve the lives of individuals and communities through personalized and compassionate social services. We strive to create a supportive and inclusive environment where everyone has the opportunity to reach their full potential."
+                        "Our mission is to empower and improve the lives of individuals and communities through personalized and compassionate educational services. We strive to create a supportive and inclusive environment where everyone has the opportunity to reach their full potential."
                       }
                     </div>
                     <Button
@@ -312,7 +312,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               style={{ color: "#000000" }}
                             >
                               {
-                                "At our social service nonprofit, we are dedicated to making a positive impact on the King County community. By providing a range of programs and services, including support for families, youth, and seniors, we help to alleviate the challenges faced by those in need. Whether it's through providing access to resources, offering education and skill building opportunities, or simply being a supportive ear, we strive to make a difference in the lives of those we serve. Join us in our mission to strengthen and empower our King County community."
+                                "At our social service nonprofit, we are dedicated to making a positive impact on the King County community. By providing a range of educational programs and services across ages, we help to alleviate the challenges faced by those in need. Whether it's through providing access to resources, offering education and skill building opportunities, or simply being a supportive ear, we strive to make a difference in the lives of those we serve. Join us in our mission to strengthen and empower our King County community."
                               }
                             </span>
                           </React.Fragment>
@@ -355,7 +355,27 @@ function PlasmicHomepage__RenderFunc(props: {
                         >
                           {hasVariant(globalVariants, "screen", "mobileOnly")
                             ? "Education"
-                            : "\n\nEducation"}
+                            : "Technology Access & Digital Literacy"}
+                        </a>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column___6ZdUk
+                        )}
+                      >
+                        <a
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            sty.link__jnKtv
+                          )}
+                          href={`/services`}
+                        >
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Education"
+                            : "\n\nRemedial Education"}
                         </a>
                       </div>
                       <div
@@ -372,7 +392,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         >
                           {hasVariant(globalVariants, "screen", "mobileOnly")
                             ? "Housing"
-                            : "\n\nHousing"}
+                            : "\n\nMental Health & Counseling"}
                         </a>
                       </div>
                       <div
@@ -530,7 +550,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-override={overrides.embedHtml}
                     className={classNames("__wab_instance", sty.embedHtml)}
                     code={
-                      '<!-- Begin Mailchimp Signup Form -->\r\n<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">\r\n<style type="text/css">\r\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\r\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\r\n</style>\r\n<div id="mc_embed_signup"style="font-family: Mako;">\r\n    <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=e2b4dbc133397d49c88885733&amp;id=4312483685&amp;f_id=0022d1e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n        <div id="mc_embed_signup_scroll">\r\n        \r\n        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>\r\n\t<span id="mce-EMAIL-HELPERTEXT" class="helper_text">Ex. s-ssomujayabalan@lwsd.org</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-FNAME">First Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>\r\n\t<span id="mce-FNAME-HELPERTEXT" class="helper_text">Ex. Saathvik</span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>\r\n\t<span id="mce-LNAME-HELPERTEXT" class="helper_text">Ex. Somujayabalan</span>\r\n</div>\r\n\t<div id="mce-responses" class="clear foot">\r\n\t\t<div class="response" id="mce-error-response" style="display:none"></div>\r\n\t\t<div class="response" id="mce-success-response" style="display:none"></div>\r\n\t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2b4dbc133397d49c88885733_4312483685" tabindex="-1" value=""></div>\r\n        <div class="optionalParent">\r\n            <div class="clear foot">\r\n                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0b6298;">\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>\r\n</div>\r\n<script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'ADDRESS\';ftypes[3]=\'address\';fnames[4]=\'PHONE\';ftypes[4]=\'phone\';fnames[5]=\'BIRTHDAY\';ftypes[5]=\'birthday\';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\r\n<!--End mc_embed_signup-->' as const
+                      '<!-- Begin Mailchimp Signup Form -->\r\n<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">\r\n<style type="text/css">\r\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}\r\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\r\n</style>\r\n<style type="text/css">\r\n\t#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}\r\n\t#mergeRow-gdpr {margin-top: 20px;}\r\n\t#mergeRow-gdpr fieldset label {font-weight: normal;}\r\n\t#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}\r\n\t#font-family: Inter\r\n\t#text-align: center\r\n\t#margin: auto\r\n</style>\r\n<div id="mc_embed_signup" style="font-family: Inter; margin: auto; text-align: center">\r\n    <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=e2b4dbc133397d49c88885733&amp;id=df26aa8da1&amp;v_id=98&amp;f_id=00d2ade1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n        <div id="mc_embed_signup_scroll">\r\n        \r\n        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>\r\n\t<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-FNAME">First Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>\r\n\t<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>\r\n\t<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">\r\n    <div class="content__gdpr">\r\n        \r\n        <p>Please select all the ways you would like to hear from :</p>\r\n        <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">\r\n\t\t<label class="checkbox subfield" for="gdpr_982"><input type="checkbox" id="gdpr_982" name="gdpr[982]" value="Y" class="av-checkbox "><span>Email</span> </label>\r\n        </fieldset>\r\n        <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>\r\n    </div>\r\n    <div class="content__gdprLegal">\r\n        \r\n    </div>\r\n</div>\r\n\t<div id="mce-responses" class="clear foot">\r\n\t\t<div class="response" id="mce-error-response" style="display:none"></div>\r\n\t\t<div class="response" id="mce-success-response" style="display:none"></div>\r\n\t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2b4dbc133397d49c88885733_df26aa8da1" tabindex="-1" value=""></div>\r\n        <div class="optionalParent" style="margin: auto;">\r\n            <div class="clear foot" style="margin: auto;">\r\n                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0b6298; margin: auto">\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>\r\n</div>\r\n<script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'ADDRESS\';ftypes[3]=\'address\';fnames[4]=\'PHONE\';ftypes[4]=\'phone\';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\r\n<!--End mc_embed_signup-->' as const
                     }
                   />
                 </div>

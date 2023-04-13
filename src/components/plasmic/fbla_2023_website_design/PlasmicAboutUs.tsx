@@ -137,6 +137,9 @@ function PlasmicAboutUs__RenderFunc(props: {
             data-plasmic-name={"tagline"}
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
+            slot={
+              "KingCare is a 501(c)(3) non-profit that provides educational services to the socioeconomically disadvantaged of King County. Since our inception in 2014, we have provided for more than 5,000 under-resourced residents and have given back over $400,000 to the community.\n"
+            }
           >
             <div
               className={classNames(
@@ -203,12 +206,20 @@ function PlasmicAboutUs__RenderFunc(props: {
                         <p.PlasmicImg
                           alt={""}
                           className={classNames(sty.img__hdnFy)}
-                          displayHeight={"336px" as const}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("336px" as const)
+                          }
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
                           loading={"lazy" as const}
                           src={{
                             src: screenShot20230202At90047PMpngMzPiqF6Rm,
@@ -218,25 +229,24 @@ function PlasmicAboutUs__RenderFunc(props: {
                           }}
                         />
 
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__b5LFw
-                          )}
-                        >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : false
+                        ) ? (
                           <p.Stack
                             as={"div"}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__z0Qau
+                              sty.freeBox__rPgBr
                             )}
                           >
                             <h1
                               className={classNames(
                                 projectcss.all,
                                 projectcss.h1,
-                                sty.h1__y2Or
+                                sty.h1__x23Um
                               )}
                             >
                               <h3
@@ -244,7 +254,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                                   projectcss.all,
                                   projectcss.h3,
                                   projectcss.__wab_text,
-                                  sty.h3__evxDq
+                                  sty.h3__yCaiV
                                 )}
                               >
                                 {"Anshu Aggarwal"}
@@ -253,20 +263,76 @@ function PlasmicAboutUs__RenderFunc(props: {
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__rjLDv
+                                sty.freeBox__xSynK
                               )}
                             >
                               <div
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.__wab_text,
-                                  sty.text__xgvv5
+                                  sty.text__pEfSy
                                 )}
                               >
-                                {"Co-Founder"}
+                                {"Co=Founder"}
                               </div>
                             </div>
                           </p.Stack>
+                        ) : null}
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__b5LFw
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <p.Stack
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__z0Qau
+                              )}
+                            >
+                              <h1
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h1,
+                                  sty.h1__y2Or
+                                )}
+                              >
+                                <h3
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.h3,
+                                    projectcss.__wab_text,
+                                    sty.h3__evxDq
+                                  )}
+                                >
+                                  {"Anshu Aggarwal"}
+                                </h3>
+                              </h1>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__rjLDv
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__xgvv5
+                                  )}
+                                >
+                                  {"Co-Founder"}
+                                </div>
+                              </div>
+                            </p.Stack>
+                          ) : null}
                         </div>
                       </div>
                       <div
@@ -278,12 +344,20 @@ function PlasmicAboutUs__RenderFunc(props: {
                         <p.PlasmicImg
                           alt={""}
                           className={classNames(sty.img__yxJim)}
-                          displayHeight={"336px" as const}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("336px" as const)
+                          }
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
                           loading={"lazy" as const}
                           src={{
                             src: facejpg5GrKgSZee,
