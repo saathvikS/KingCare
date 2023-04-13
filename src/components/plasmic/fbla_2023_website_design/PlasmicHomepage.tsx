@@ -392,7 +392,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         >
                           {hasVariant(globalVariants, "screen", "mobileOnly")
                             ? "Housing"
-                            : "\n\nMental Health & Counseling"}
+                            : "Mental Health & Counseling"}
                         </a>
                       </div>
                       <div
@@ -413,7 +413,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         >
                           {hasVariant(globalVariants, "screen", "mobileOnly")
                             ? "Transportation"
-                            : "\n\nTransportation"}
+                            : "College & Career Readiness"}
                         </a>
                       </div>
                     </div>
