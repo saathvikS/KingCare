@@ -30,10 +30,25 @@
   line-height: 1.2;
   letter-spacing: 0px;
   text-align: center;
+  margin-top: 31px;
   min-width: 0;
 }
 .text {
   position: relative;
+  margin-left: 60px;
+  margin-right: 60px;
+  color: var(--token-k83QV_imD);
+  background: var(--token-IQATk1fOJ);
+  margin-bottom: 41px;
+  padding: 31px 50px;
+}
+@media (min-width: 0px) and (max-width: 943px) {
+  .text {
+    margin-right: 26px;
+    margin-left: 26px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 .footer:global(.__wab_instance) {
   max-width: 100%;

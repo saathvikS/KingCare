@@ -72,7 +72,6 @@ export type PlasmicHomepage__OverridesType = {
   columns?: p.Flex<"div">;
   coloredBodyTextColumns2?: p.Flex<"div">;
   whiteBodyTextColumns2?: p.Flex<"div">;
-  embedHtml?: p.Flex<typeof Embed>;
   footer?: p.Flex<typeof Footer>;
   footerBottom?: p.Flex<typeof FooterBottom>;
 };
@@ -546,9 +545,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     </React.Fragment>
                   </div>
                   <Embed
-                    data-plasmic-name={"embedHtml"}
-                    data-plasmic-override={overrides.embedHtml}
-                    className={classNames("__wab_instance", sty.embedHtml)}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.embedHtml__wkDgC
+                    )}
                     code={
                       '<!-- Begin Mailchimp Signup Form -->\r\n<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">\r\n<style type="text/css">\r\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}\r\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\r\n</style>\r\n<style type="text/css">\r\n\t#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}\r\n\t#mergeRow-gdpr {margin-top: 20px;}\r\n\t#mergeRow-gdpr fieldset label {font-weight: normal;}\r\n\t#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}\r\n\t#font-family: Inter\r\n\t#text-align: center\r\n\t#margin: auto\r\n</style>\r\n<div id="mc_embed_signup" style="font-family: Inter; margin: auto; text-align: center">\r\n    <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=e2b4dbc133397d49c88885733&amp;id=df26aa8da1&amp;v_id=98&amp;f_id=00d2ade1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n        <div id="mc_embed_signup_scroll">\r\n        \r\n        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>\r\n\t<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-FNAME">First Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>\r\n\t<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div class="mc-field-group">\r\n\t<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>\r\n</label>\r\n\t<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>\r\n\t<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>\r\n</div>\r\n<div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">\r\n    <div class="content__gdpr">\r\n        \r\n        <p>Please select all the ways you would like to hear from :</p>\r\n        <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">\r\n\t\t<label class="checkbox subfield" for="gdpr_982"><input type="checkbox" id="gdpr_982" name="gdpr[982]" value="Y" class="av-checkbox "><span>Email</span> </label>\r\n        </fieldset>\r\n        <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>\r\n    </div>\r\n    <div class="content__gdprLegal">\r\n        \r\n    </div>\r\n</div>\r\n\t<div id="mce-responses" class="clear foot">\r\n\t\t<div class="response" id="mce-error-response" style="display:none"></div>\r\n\t\t<div class="response" id="mce-success-response" style="display:none"></div>\r\n\t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2b4dbc133397d49c88885733_df26aa8da1" tabindex="-1" value=""></div>\r\n        <div class="optionalParent" style="margin: auto;">\r\n            <div class="clear foot" style="margin: auto;">\r\n                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0b6298; margin: auto">\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>\r\n</div>\r\n<script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'ADDRESS\';ftypes[3]=\'address\';fnames[4]=\'PHONE\';ftypes[4]=\'phone\';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\r\n<!--End mc_embed_signup-->' as const
                     }
@@ -566,6 +566,13 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"footerBottom"}
               data-plasmic-override={overrides.footerBottom}
               className={classNames("__wab_instance", sty.footerBottom)}
+            />
+
+            <Embed
+              className={classNames("__wab_instance", sty.embedHtml___5VGn)}
+              code={
+                "<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src='https://embed.tawk.to/643839984247f20fefeb7ac5/1gttq1vcj';\r\ns1.charset='UTF-8';\r\ns1.setAttribute('crossorigin','*');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->" as const
+              }
             />
           </div>
         ) : null}
@@ -585,7 +592,6 @@ const PlasmicDescendants = {
     "columns",
     "coloredBodyTextColumns2",
     "whiteBodyTextColumns2",
-    "embedHtml",
     "footer",
     "footerBottom"
   ],
@@ -596,8 +602,7 @@ const PlasmicDescendants = {
   freeBox: ["freeBox"],
   columns: ["columns"],
   coloredBodyTextColumns2: ["coloredBodyTextColumns2"],
-  whiteBodyTextColumns2: ["whiteBodyTextColumns2", "embedHtml"],
-  embedHtml: ["embedHtml"],
+  whiteBodyTextColumns2: ["whiteBodyTextColumns2"],
   footer: ["footer"],
   footerBottom: ["footerBottom"]
 } as const;
@@ -614,7 +619,6 @@ type NodeDefaultElementType = {
   columns: "div";
   coloredBodyTextColumns2: "div";
   whiteBodyTextColumns2: "div";
-  embedHtml: typeof Embed;
   footer: typeof Footer;
   footerBottom: typeof FooterBottom;
 };
@@ -687,7 +691,6 @@ export const PlasmicHomepage = Object.assign(
     columns: makeNodeComponent("columns"),
     coloredBodyTextColumns2: makeNodeComponent("coloredBodyTextColumns2"),
     whiteBodyTextColumns2: makeNodeComponent("whiteBodyTextColumns2"),
-    embedHtml: makeNodeComponent("embedHtml"),
     footer: makeNodeComponent("footer"),
     footerBottom: makeNodeComponent("footerBottom"),
 
