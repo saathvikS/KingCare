@@ -543,12 +543,20 @@
   object-fit: cover;
   position: relative;
 }
+@media (min-width: 0px) and (max-width: 943px) {
+  .embedHtml:global(.__wab_instance) {
+    width: 186px;
+    flex-shrink: 0;
+  }
+}
 .donateButton:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .donateButton:global(.__wab_instance) {
+    margin-top: 12px;
+    margin-left: 10px;
     flex-shrink: 0;
   }
 }
