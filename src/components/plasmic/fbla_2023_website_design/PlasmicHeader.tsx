@@ -290,7 +290,15 @@ function PlasmicHeader__RenderFunc(props: {
             data-plasmic-override={overrides.donateButton}
             className={classNames("__wab_instance", sty.donateButton)}
           >
-            {"DONATE"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___1Ku5B
+              )}
+            >
+              {"DONATE"}
+            </div>
           </DonateButton>
         </p.Stack>
       </p.Stack>

@@ -543,7 +543,7 @@
 .donateButton:global(.__wab_instance) {
   position: relative;
   margin-top: 14px;
-  margin-left: calc(94px + 8px) !important;
+  margin-left: calc(238px + 8px) !important;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 943px) {
@@ -555,4 +555,7 @@
     width: 100%;
     min-width: 0;
   }
+}
+.text___1Ku5B {
+  padding-left: 0px;
 }
