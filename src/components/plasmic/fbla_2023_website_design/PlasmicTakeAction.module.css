@@ -657,19 +657,19 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     min-height: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > picture > img {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > :global(.__wab_img-spacer) > img {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 .button___4LD4:global(.__wab_instance) {
@@ -722,19 +722,19 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     min-height: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp > picture > img {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp > :global(.__wab_img-spacer) > img {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 .button__zwuaj:global(.__wab_instance) {

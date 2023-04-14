@@ -32,8 +32,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import DonateButton from "../../DonateButton"; // plasmic-import: 8qGb6ylmZB/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 
 import { useScreenVariants as useScreenVariantsnTHrtOlDoRnz } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nTHrtOLDoRNZ/globalVariant
 
@@ -58,8 +58,8 @@ export type PlasmicHeader__OverridesType = {
   header?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   aboutUs?: p.Flex<"a">;
-  embedHtml?: p.Flex<typeof Embed>;
   donateButton?: p.Flex<typeof DonateButton>;
+  embedHtml?: p.Flex<typeof Embed>;
 };
 
 export interface DefaultHeaderProps {
@@ -277,22 +277,27 @@ function PlasmicHeader__RenderFunc(props: {
             ) : null}
           </p.Stack>
           <div className={classNames(projectcss.all, sty.freeBox__yeU69)}>
-            <Embed
-              data-plasmic-name={"embedHtml"}
-              data-plasmic-override={overrides.embedHtml}
-              className={classNames("__wab_instance", sty.embedHtml)}
-              code={
-                '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
-              }
-            />
-
-            <DonateButton
-              data-plasmic-name={"donateButton"}
-              data-plasmic-override={overrides.donateButton}
-              className={classNames("__wab_instance", sty.donateButton)}
-            >
-              {"DONATE"}
-            </DonateButton>
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__v9ItX)}>
+                <DonateButton
+                  data-plasmic-name={"donateButton"}
+                  data-plasmic-override={overrides.donateButton}
+                  className={classNames("__wab_instance", sty.donateButton)}
+                >
+                  {"DONATE"}
+                </DonateButton>
+                <Embed
+                  data-plasmic-name={"embedHtml"}
+                  data-plasmic-override={overrides.embedHtml}
+                  className={classNames("__wab_instance", sty.embedHtml)}
+                  code={
+                    '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
+                  }
+                />
+              </div>
+            ) : null}
           </div>
         </p.Stack>
       </p.Stack>
@@ -301,11 +306,11 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  header: ["header", "img", "aboutUs", "embedHtml", "donateButton"],
+  header: ["header", "img", "aboutUs", "donateButton", "embedHtml"],
   img: ["img"],
   aboutUs: ["aboutUs"],
-  embedHtml: ["embedHtml"],
-  donateButton: ["donateButton"]
+  donateButton: ["donateButton"],
+  embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -314,8 +319,8 @@ type NodeDefaultElementType = {
   header: "div";
   img: typeof p.PlasmicImg;
   aboutUs: "a";
-  embedHtml: typeof Embed;
   donateButton: typeof DonateButton;
+  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -380,8 +385,8 @@ export const PlasmicHeader = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     aboutUs: makeNodeComponent("aboutUs"),
-    embedHtml: makeNodeComponent("embedHtml"),
     donateButton: makeNodeComponent("donateButton"),
+    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
