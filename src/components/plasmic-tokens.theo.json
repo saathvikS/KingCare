@@ -71,6 +71,16 @@
       }
     },
     {
+      "name": "Unnamed Style Token",
+      "type": "color",
+      "value": "#2B2B2B",
+      "category": "color",
+      "meta": {
+        "projectId": "3gFepDhbdVBaDHe3ms9CNF",
+        "id": "-QyTZN3B7"
+      }
+    },
+    {
       "name": "White",
       "type": "color",
       "value": "#FFFFFF",

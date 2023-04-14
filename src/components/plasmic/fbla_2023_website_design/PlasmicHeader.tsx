@@ -123,7 +123,7 @@ function PlasmicHeader__RenderFunc(props: {
       >
         <a
           className={classNames(projectcss.all, projectcss.a, sty.link__u6Dc)}
-          href={`/home`}
+          href={`/`}
         >
           <p.PlasmicImg
             data-plasmic-name={"img"}
@@ -292,7 +292,9 @@ function PlasmicHeader__RenderFunc(props: {
         data-plasmic-name={"donateButton"}
         data-plasmic-override={overrides.donateButton}
         className={classNames("__wab_instance", sty.donateButton)}
-      />
+      >
+        {"DONATE"}
+      </DonateButton>
     </p.Stack>
   ) as React.ReactElement | null;
 }

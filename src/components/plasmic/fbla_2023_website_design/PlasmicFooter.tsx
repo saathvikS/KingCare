@@ -32,6 +32,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -54,6 +55,7 @@ export type PlasmicFooter__OverridesType = {
   freeBox?: p.Flex<"div">;
   columns?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
+  embedHtml?: p.Flex<typeof Embed>;
 };
 
 export interface DefaultFooterProps {
@@ -122,7 +124,7 @@ function PlasmicFooter__RenderFunc(props: {
                   projectcss.a,
                   sty.link___8AntE
                 )}
-                href={`/home`}
+                href={`/`}
               >
                 <p.PlasmicImg
                   data-plasmic-name={"img"}
@@ -144,6 +146,14 @@ function PlasmicFooter__RenderFunc(props: {
                   }}
                 />
               </a>
+              <Embed
+                data-plasmic-name={"embedHtml"}
+                data-plasmic-override={overrides.embedHtml}
+                className={classNames("__wab_instance", sty.embedHtml)}
+                code={
+                  '<!--Start of Tawk.to Script-->\r\n<script type="text/javascript">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/643839984247f20fefeb7ac5/1gttq1vcj\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->\r\n\r\n<div id="google_translate_element"></div>\r\n\r\n<script type="text/javascript">\r\nfunction googleTranslateElementInit() {\r\n  new google.translate.TranslateElement({pageLanguage: \'en\', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, \'google_translate_element\');\r\n}\r\n</script>\r\n\r\n<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>' as const
+                }
+              />
             </div>
             <div className={classNames(projectcss.all, sty.column___3ZvN)}>
               <h3
@@ -337,10 +347,11 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "columns", "img"],
-  freeBox: ["freeBox", "columns", "img"],
-  columns: ["columns", "img"],
-  img: ["img"]
+  root: ["root", "freeBox", "columns", "img", "embedHtml"],
+  freeBox: ["freeBox", "columns", "img", "embedHtml"],
+  columns: ["columns", "img", "embedHtml"],
+  img: ["img"],
+  embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -350,6 +361,7 @@ type NodeDefaultElementType = {
   freeBox: "div";
   columns: "div";
   img: typeof p.PlasmicImg;
+  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -415,6 +427,7 @@ export const PlasmicFooter = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     columns: makeNodeComponent("columns"),
     img: makeNodeComponent("img"),
+    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

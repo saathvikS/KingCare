@@ -95,7 +95,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
   font-weight: 700;
-  color: #ffffff;
+  color: #2b2b2b;
   line-height: 1.2;
   letter-spacing: 0px;
   position: relative;
@@ -111,7 +111,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  color: #ffffff;
+  color: #2b2b2b;
   line-height: 1.8;
   font-size: 18px;
   position: relative;
@@ -347,6 +347,12 @@
   border-radius: 6px;
   border: 0px solid #d3d3d3;
 }
+@media (min-width: 0px) and (max-width: 943px) {
+  .link__cTuQs {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
 .column___6ZdUk {
   display: flex;
   position: relative;
@@ -376,6 +382,12 @@
   min-height: 0;
   border-radius: 6px;
   border: 0px solid #d3d3d3;
+}
+@media (min-width: 0px) and (max-width: 943px) {
+  .link__jnKtv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .column__fh1E {
   display: flex;
@@ -409,6 +421,12 @@
   border-radius: 6px;
   border: 0px solid #d3d3d3;
 }
+@media (min-width: 0px) and (max-width: 943px) {
+  .link__fjC9 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .column__eg14Q {
   display: flex;
   position: relative;
@@ -439,6 +457,12 @@
   min-height: 0;
   border-radius: 6px;
   border: 0px solid #d3d3d3;
+}
+@media (min-width: 0px) and (max-width: 943px) {
+  .link__sJxTf {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .reveal___04Eq8:global(.__wab_instance) {
   max-width: 100%;
@@ -505,7 +529,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
   font-weight: 700;
-  color: #ffffff;
+  color: #2b2b2b;
   line-height: 1.2;
   letter-spacing: 0px;
   position: relative;
@@ -521,7 +545,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  color: #ffffff;
+  color: #2b2b2b;
   line-height: 1.8;
   font-size: 18px;
   position: relative;
@@ -635,7 +659,7 @@
   margin-bottom: 25px;
   min-width: 0;
 }
-.embedHtml__wkDgC:global(.__wab_instance) {
+.embedHtml:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
@@ -649,10 +673,5 @@
 }
 .footerBottom:global(.__wab_instance) {
   max-width: 100%;
-  position: relative;
-}
-.embedHtml___5VGn:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
   position: relative;
 }
