@@ -215,17 +215,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__fsccQ
-                      )}
-                      link={
-                        "https://donate.stripe.com/test_dR66sqdTmaeC28ofYY" as const
-                      }
-                    >
-                      {"Donate Now"}
-                    </Button>
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
                         sty.button___15Prz
                       )}
                       link={`/take-action`}

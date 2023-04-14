@@ -125,34 +125,12 @@
     align-self: center;
   }
 }
-.button__fsccQ:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  margin-top: 29px;
-  width: 720px;
-}
-@media (min-width: 0px) and (max-width: 943px) {
-  .button__fsccQ:global(.__wab_instance) {
-    align-self: center;
-  }
-}
-.svg__yLkZb {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__jH0Rl {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
 .button___15Prz:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  margin-top: 29px;
-  width: 720px;
+  margin-top: 56px;
+  width: 606px;
+  margin-left: 34px;
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .button___15Prz:global(.__wab_instance) {
