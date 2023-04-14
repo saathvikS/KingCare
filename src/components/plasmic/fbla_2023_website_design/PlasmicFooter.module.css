@@ -107,6 +107,7 @@
   object-fit: cover;
   position: relative;
   margin-top: 60px;
+  width: auto;
 }
 .column___3ZvN {
   display: flex;
