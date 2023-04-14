@@ -107,14 +107,6 @@
   object-fit: cover;
   position: relative;
   margin-top: 60px;
-  width: 100%;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 943px) {
-  .embedHtml:global(.__wab_instance) {
-    width: 100%;
-    min-width: 0;
-  }
 }
 .column___3ZvN {
   display: flex;
