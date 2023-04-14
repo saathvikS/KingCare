@@ -425,7 +425,7 @@ function PlasmicTakeAction__RenderFunc(props: {
                           className={classNames(sty.img__xgmAb)}
                           displayHeight={
                             hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("100%" as const)
+                              ? ("auto" as const)
                               : ("507px" as const)
                           }
                           displayMaxHeight={"none" as const}
@@ -466,7 +466,7 @@ function PlasmicTakeAction__RenderFunc(props: {
                           className={classNames(sty.img__pVuRp)}
                           displayHeight={
                             hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("100%" as const)
+                              ? ("auto" as const)
                               : ("507px" as const)
                           }
                           displayMaxHeight={"none" as const}

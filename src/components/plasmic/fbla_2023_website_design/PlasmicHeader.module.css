@@ -596,7 +596,7 @@
 @media (min-width: 0px) and (max-width: 943px) {
   .donateButton:global(.__wab_instance) {
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 32px;
     max-width: 242px;
     width: 100%;
@@ -611,6 +611,7 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .embedHtml:global(.__wab_instance) {
-    width: 276px;
+    width: 238px;
+    margin-right: 0px;
   }
 }
