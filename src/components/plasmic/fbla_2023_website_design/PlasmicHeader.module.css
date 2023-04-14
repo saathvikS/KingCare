@@ -556,8 +556,41 @@
     display: flex;
   }
 }
+.freeBox__wIjl {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__b3Lyt {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-left: 62px;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 943px) {
+  .freeBox__b3Lyt {
+    margin-left: 2px;
+    display: flex;
+  }
+}
 .donateButton:global(.__wab_instance) {
   position: relative;
+  margin-top: 14px;
+  margin-left: 94px;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 943px) {
@@ -574,6 +607,7 @@
 .embedHtml:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  width: 324px;
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .embedHtml:global(.__wab_instance) {

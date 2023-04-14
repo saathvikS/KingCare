@@ -480,14 +480,6 @@
     margin-top: calc(0px + 8px) !important;
   }
 }
-.slider:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
-  flex-direction: column;
-  object-fit: cover;
-  position: relative;
-  min-width: 0;
-}
 .freeBox__rVpPv {
   display: flex;
   position: relative;
@@ -657,19 +649,19 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb {
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
     min-height: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > picture > img {
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > :global(.__wab_img-spacer) > img {
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 .button___4LD4:global(.__wab_instance) {
@@ -722,19 +714,19 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp {
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
     min-height: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp > picture > img {
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__pVuRp > :global(.__wab_img-spacer) > img {
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 .button__zwuaj:global(.__wab_instance) {
@@ -759,6 +751,19 @@
   object-fit: cover;
   width: 1em;
   height: 1em;
+}
+.slider:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  object-fit: cover;
+  position: relative;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 943px) {
+  .slider:global(.__wab_instance) {
+    display: none;
+  }
 }
 .volunteer {
   display: flex;

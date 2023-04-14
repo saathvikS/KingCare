@@ -281,21 +281,46 @@ function PlasmicHeader__RenderFunc(props: {
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
               <div className={classNames(projectcss.all, sty.freeBox__v9ItX)}>
-                <DonateButton
-                  data-plasmic-name={"donateButton"}
-                  data-plasmic-override={overrides.donateButton}
-                  className={classNames("__wab_instance", sty.donateButton)}
-                >
-                  {"DONATE"}
-                </DonateButton>
-                <Embed
-                  data-plasmic-name={"embedHtml"}
-                  data-plasmic-override={overrides.embedHtml}
-                  className={classNames("__wab_instance", sty.embedHtml)}
-                  code={
-                    '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
-                  }
-                />
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__wIjl)}
+                  >
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__b3Lyt
+                        )}
+                      >
+                        <DonateButton
+                          data-plasmic-name={"donateButton"}
+                          data-plasmic-override={overrides.donateButton}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.donateButton
+                          )}
+                        >
+                          {"DONATE"}
+                        </DonateButton>
+                        <Embed
+                          data-plasmic-name={"embedHtml"}
+                          data-plasmic-override={overrides.embedHtml}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.embedHtml
+                          )}
+                          code={
+                            '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
+                          }
+                        />
+                      </div>
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
             ) : null}
           </div>
