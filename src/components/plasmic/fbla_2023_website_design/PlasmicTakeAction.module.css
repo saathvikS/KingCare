@@ -132,7 +132,7 @@
 }
 .h2__uf3EC {
   padding-top: 0px;
-  color: #ffffff;
+  color: var(--token--QyTZN3B7);
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 36px;
@@ -156,7 +156,7 @@
   max-width: none;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  color: #ffffff;
+  color: var(--token--QyTZN3B7);
   text-align: center;
   font-family: "Mako", sans-serif;
   font-size: 16px;
@@ -657,19 +657,19 @@
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
     min-height: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > picture > img {
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .img__xgmAb > :global(.__wab_img-spacer) > img {
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 .button___4LD4:global(.__wab_instance) {
@@ -952,7 +952,7 @@
   font-size: 36px;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff;
+  color: var(--token--QyTZN3B7);
   text-align: center;
   text-transform: none;
   line-height: 1.1;
@@ -973,7 +973,7 @@
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
+  color: var(--token--QyTZN3B7);
   text-align: left;
   text-transform: none;
   line-height: 1.7;

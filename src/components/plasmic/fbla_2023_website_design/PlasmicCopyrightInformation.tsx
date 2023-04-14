@@ -57,7 +57,6 @@ export type PlasmicCopyrightInformation__OverridesType = {
   header?: p.Flex<typeof Header>;
   tagline?: p.Flex<typeof Tagline>;
   h1?: p.Flex<"h1">;
-  text?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
   footerBottom?: p.Flex<typeof FooterBottom>;
 };
@@ -125,7 +124,15 @@ function PlasmicCopyrightInformation__RenderFunc(props: {
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
           >
-            {"Copyright Information"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___6OHoy
+              )}
+            >
+              {"Copyright Information"}
+            </div>
           </Tagline>
           <h1
             data-plasmic-name={"h1"}
@@ -140,12 +147,10 @@ function PlasmicCopyrightInformation__RenderFunc(props: {
             {"Copyright Information"}
           </h1>
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text
+              sty.text__ekbWb
             )}
           >
             {
@@ -170,11 +175,10 @@ function PlasmicCopyrightInformation__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "tagline", "h1", "text", "footer", "footerBottom"],
+  root: ["root", "header", "tagline", "h1", "footer", "footerBottom"],
   header: ["header"],
   tagline: ["tagline"],
   h1: ["h1"],
-  text: ["text"],
   footer: ["footer"],
   footerBottom: ["footerBottom"]
 } as const;
@@ -186,7 +190,6 @@ type NodeDefaultElementType = {
   header: typeof Header;
   tagline: typeof Tagline;
   h1: "h1";
-  text: "div";
   footer: typeof Footer;
   footerBottom: typeof FooterBottom;
 };
@@ -254,7 +257,6 @@ export const PlasmicCopyrightInformation = Object.assign(
     header: makeNodeComponent("header"),
     tagline: makeNodeComponent("tagline"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     footerBottom: makeNodeComponent("footerBottom"),
 

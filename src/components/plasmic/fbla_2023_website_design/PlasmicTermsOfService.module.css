@@ -24,6 +24,9 @@
     flex-shrink: 0;
   }
 }
+.text___9B3Xi {
+  color: var(--token-IQATk1fOJ);
+}
 .h1 {
   width: 100%;
   height: auto;
@@ -44,7 +47,7 @@
     font-size: 40px;
   }
 }
-.text {
+.text__v9Szn {
   position: relative;
   background: var(--token-IQATk1fOJ);
   margin-right: 61px;
@@ -54,7 +57,7 @@
   padding: 32px 51px;
 }
 @media (min-width: 0px) and (max-width: 943px) {
-  .text {
+  .text__v9Szn {
     margin-right: 20px;
     margin-left: 23px;
     padding-right: 23px;

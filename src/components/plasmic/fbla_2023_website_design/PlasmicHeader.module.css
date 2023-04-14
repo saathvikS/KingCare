@@ -547,3 +547,8 @@
   position: relative;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 943px) {
+  .donateButton:global(.__wab_instance) {
+    flex-shrink: 0;
+  }
+}

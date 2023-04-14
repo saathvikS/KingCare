@@ -19,6 +19,9 @@
   position: relative;
   flex-shrink: 0;
 }
+.text__ayi6C {
+  color: var(--token-IQATk1fOJ);
+}
 .h1 {
   width: 100%;
   height: auto;
@@ -34,7 +37,7 @@
   margin-top: 32px;
   min-width: 0;
 }
-.text {
+.text__veT5A {
   position: relative;
   margin-left: 25px;
   margin-right: 25px;

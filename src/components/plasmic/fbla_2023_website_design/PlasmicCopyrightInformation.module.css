@@ -19,6 +19,9 @@
   position: relative;
   flex-shrink: 0;
 }
+.text___6OHoy {
+  color: var(--token-IQATk1fOJ);
+}
 .h1 {
   width: 100%;
   height: auto;
@@ -34,7 +37,7 @@
   margin-top: 31px;
   min-width: 0;
 }
-.text {
+.text__ekbWb {
   position: relative;
   margin-left: 60px;
   margin-right: 60px;
@@ -44,7 +47,7 @@
   padding: 31px 50px;
 }
 @media (min-width: 0px) and (max-width: 943px) {
-  .text {
+  .text__ekbWb {
     margin-right: 26px;
     margin-left: 26px;
     padding-right: 24px;
