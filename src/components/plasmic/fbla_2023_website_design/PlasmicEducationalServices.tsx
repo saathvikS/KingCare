@@ -36,6 +36,7 @@ import Header from "../../Header"; // plasmic-import: e0SGo-44ddg/component
 import Tagline from "../../Tagline"; // plasmic-import: lHrnwZQKsB/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import Footer from "../../Footer"; // plasmic-import: EdywSuH81fY/component
 import FooterBottom from "../../FooterBottom"; // plasmic-import: 5nUaKoc582/component
 
@@ -60,6 +61,8 @@ export type PlasmicEducationalServices__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   tagline?: p.Flex<typeof Tagline>;
+  freeBox?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
   footer?: p.Flex<typeof Footer>;
   footerBottom?: p.Flex<typeof FooterBottom>;
 };
@@ -131,7 +134,17 @@ function PlasmicEducationalServices__RenderFunc(props: {
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
             slot={
-              "KingCare is proud to offer various educational services with many more on the way to help out the underprivileged in our community. If you are in need of one of these services, please do not hesitate to reach out to us."
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__otVee
+                )}
+              >
+                {
+                  "KingCare is proud to offer various educational services with many more on the way to help out the underprivileged in our community. If you are in need of one of these services, please do not hesitate to reach out to us."
+                }
+              </div>
             }
           >
             <div
@@ -156,8 +169,46 @@ function PlasmicEducationalServices__RenderFunc(props: {
               )}
               speed={5 as const}
             >
+              {true ? (
+                <div
+                  data-plasmic-name={"freeBox"}
+                  data-plasmic-override={overrides.freeBox}
+                  className={classNames(projectcss.all, sty.freeBox)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__nm3V1
+                    )}
+                  >
+                    {"Book a FREE Initial Consultation"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ducru
+                    )}
+                  >
+                    {
+                      "Talk to a KingCare representative to plan the right path for you. We will help you determine which of our services could be potentially beneficial for you in a 30 minute consultation on phone call or at a KingCare center."
+                    }
+                  </div>
+                  <Embed
+                    data-plasmic-name={"embedHtml"}
+                    data-plasmic-override={overrides.embedHtml}
+                    className={classNames("__wab_instance", sty.embedHtml)}
+                    code={
+                      '<script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; " id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/85c13010-fe48-4f3f-805c-6ed87de35082"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Saathvik Somujayabalan using Setmore"/></a>' as const
+                    }
+                  />
+                </div>
+              ) : null}
               <div className={classNames(projectcss.all, sty.columns__zSxU)}>
-                <div className={classNames(projectcss.all, sty.column__r3I4)}>
+                <div className={classNames(projectcss.all, sty.column__r3I4)} />
+
+                <div className={classNames(projectcss.all, sty.column___8ELnG)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -165,10 +216,10 @@ function PlasmicEducationalServices__RenderFunc(props: {
                       sty.text__za0Mu
                     )}
                   >
-                    {"Technology Access & Digital LIteracy"}
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Technology Access & \nDigital Literacy"
+                      : "Technology Access & Digital Literacy"}
                   </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column___8ELnG)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -209,6 +260,15 @@ function PlasmicEducationalServices__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
+                        sty.text___50Mr1
+                      )}
+                    >
+                      {"Remedial Education & Tutoring"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text__ry0Oe
                       )}
                     >
@@ -219,15 +279,6 @@ function PlasmicEducationalServices__RenderFunc(props: {
                   </div>
                 ) : null}
                 <div className={classNames(projectcss.all, sty.column__cs4Ak)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___50Mr1
-                    )}
-                  >
-                    {"Remedial Education"}
-                  </div>
                   {(
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? true
@@ -247,6 +298,21 @@ function PlasmicEducationalServices__RenderFunc(props: {
               </div>
             </ParallaxWrapper>
           </Reveal>
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___1LeHm
+              )}
+            >
+              {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "Remedial Education & Tutoring"
+                : "Technology Access & Digital Literacy"}
+            </div>
+          ) : null}
           {true ? (
             <div
               className={classNames(
@@ -273,7 +339,11 @@ function PlasmicEducationalServices__RenderFunc(props: {
               speed={5 as const}
             >
               <div className={classNames(projectcss.all, sty.columns__rFmD5)}>
-                <div className={classNames(projectcss.all, sty.column___58M0)}>
+                <div
+                  className={classNames(projectcss.all, sty.column___58M0)}
+                />
+
+                <div className={classNames(projectcss.all, sty.column__onqAq)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -281,10 +351,10 @@ function PlasmicEducationalServices__RenderFunc(props: {
                       sty.text__lL42
                     )}
                   >
-                    {"Mental Health & Counseling"}
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Mental Health & Counseling"
+                      : "Mental Health & Counseling"}
                   </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__onqAq)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -309,6 +379,15 @@ function PlasmicEducationalServices__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
+                    sty.text__ja5BP
+                  )}
+                >
+                  {"College & Career Readiness"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__fM9O
                   )}
                 >
@@ -319,15 +398,6 @@ function PlasmicEducationalServices__RenderFunc(props: {
               </div>
             ) : null}
             <div className={classNames(projectcss.all, sty.column__qw6Zq)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ja5BP
-                )}
-              >
-                {"College & Career Readiness"}
-              </div>
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
@@ -343,6 +413,36 @@ function PlasmicEducationalServices__RenderFunc(props: {
               ) : null}
             </div>
           </div>
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__c1BfO
+              )}
+            >
+              {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "College & Career Readiness"
+                : "Mental Health & Counseling"}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__h5Azz
+              )}
+            >
+              {
+                "Our Mental Health and Counseling Program provides compassionate support for individuals seeking to improve their mental well-being. Our experienced counselors offer personalized therapy sessions, tailored interventions, and evidence-based techniques to address a wide range of mental health concerns. We prioritize confidentiality, respect, and empathy in a safe and non-judgmental environment."
+              }
+            </div>
+          ) : null}
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -361,9 +461,19 @@ function PlasmicEducationalServices__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "tagline", "footer", "footerBottom"],
+  root: [
+    "root",
+    "header",
+    "tagline",
+    "freeBox",
+    "embedHtml",
+    "footer",
+    "footerBottom"
+  ],
   header: ["header"],
   tagline: ["tagline"],
+  freeBox: ["freeBox", "embedHtml"],
+  embedHtml: ["embedHtml"],
   footer: ["footer"],
   footerBottom: ["footerBottom"]
 } as const;
@@ -374,6 +484,8 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   tagline: typeof Tagline;
+  freeBox: "div";
+  embedHtml: typeof Embed;
   footer: typeof Footer;
   footerBottom: typeof FooterBottom;
 };
@@ -440,6 +552,8 @@ export const PlasmicEducationalServices = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     tagline: makeNodeComponent("tagline"),
+    freeBox: makeNodeComponent("freeBox"),
+    embedHtml: makeNodeComponent("embedHtml"),
     footer: makeNodeComponent("footer"),
     footerBottom: makeNodeComponent("footerBottom"),
 

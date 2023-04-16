@@ -147,7 +147,17 @@ function PlasmicTakeAction__RenderFunc(props: {
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
             slot={
-              "Our mission can only be fulfilled if we all join hands together. Any help that you may be able to provide will help further our cause. Learn more about the volunteer opportunities we have and if you wish to do so, please donate any amount you can."
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__zz9Wh
+                )}
+              >
+                {
+                  "Our mission can only be fulfilled if we all join hands together. Any help that you may be able to provide will help further our cause. Learn more about the volunteer opportunities we have and if you wish to do so, please donate any amount you can."
+                }
+              </div>
             }
           >
             <div

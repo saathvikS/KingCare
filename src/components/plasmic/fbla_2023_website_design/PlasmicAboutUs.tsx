@@ -138,7 +138,17 @@ function PlasmicAboutUs__RenderFunc(props: {
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
             slot={
-              "KingCare is a 501(c)(3) non-profit that provides educational services to the socioeconomically disadvantaged of King County. Since our inception in 2014, we have provided for more than 5,000 under-resourced residents and have given back over $400,000 to the community.\n"
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__loshm
+                )}
+              >
+                {
+                  "KingCare is a 501(c)(3) non-profit that provides educational services to the socioeconomically disadvantaged of King County. Since our inception in 2014, we have provided for more than 5,000 under-resourced residents and have given back over $400,000 to the community.\n"
+                }
+              </div>
             }
           >
             <div

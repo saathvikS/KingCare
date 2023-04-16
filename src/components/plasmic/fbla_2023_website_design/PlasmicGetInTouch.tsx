@@ -37,7 +37,7 @@ import Tagline from "../../Tagline"; // plasmic-import: lHrnwZQKsB/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
-import Button from "../../Button"; // plasmic-import: GnNzqwgKsTt/component
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: CMDBvOhaI4s/codeComponent
 import Footer from "../../Footer"; // plasmic-import: EdywSuH81fY/component
 import FooterBottom from "../../FooterBottom"; // plasmic-import: 5nUaKoc582/component
 
@@ -48,8 +48,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_fbla_2023_website_design.module.css"; // plasmic-import: 3gFepDhbdVBaDHe3ms9CNF/projectcss
 import sty from "./PlasmicGetInTouch.module.css"; // plasmic-import: ahO08vCw02/css
 
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: hQ6DylM3FaV/icon
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: AFYVcv3lQLV/icon
 import image7UwWYdPeKtDl from "./images/image7.jpeg"; // plasmic-import: UwW_ydPEKtDL/picture
 
 export type PlasmicGetInTouch__VariantMembers = {};
@@ -69,7 +67,7 @@ export type PlasmicGetInTouch__OverridesType = {
   embedHtml?: p.Flex<typeof Embed>;
   columns?: p.Flex<"div">;
   container4?: p.Flex<"div">;
-  button?: p.Flex<typeof Button>;
+  iframe?: p.Flex<typeof Iframe>;
   img?: p.Flex<typeof p.PlasmicImg>;
   footer?: p.Flex<typeof Footer>;
   footerBottom?: p.Flex<typeof FooterBottom>;
@@ -149,7 +147,17 @@ function PlasmicGetInTouch__RenderFunc(props: {
             data-plasmic-override={overrides.tagline}
             className={classNames("__wab_instance", sty.tagline)}
             slot={
-              "Want to learn more or have any complaints/suggestions? We would love to hear back from you! Feel free to come visit us at one of our three locations spread out through King County or send us a quick email and we will respond to you promptly. Please allow up to forty-eight hours for a response."
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___2Ehwk
+                )}
+              >
+                {
+                  "Want to learn more or have any complaints/suggestions? We would love to hear back from you! Feel free to come visit us at one of our three locations spread out through King County or send us a quick email and we will respond to you promptly. Please allow up to forty-eight hours for a response."
+                }
+              </div>
             }
           >
             <div
@@ -276,25 +284,16 @@ function PlasmicGetInTouch__RenderFunc(props: {
                             </span>
                           </React.Fragment>
                         </div>
-                        <Button
-                          data-plasmic-name={"button"}
-                          data-plasmic-override={overrides.button}
-                          className={classNames("__wab_instance", sty.button)}
-                          link={
-                            "https://us21.list-manage.com/contact-form?u=e2b4dbc133397d49c88885733&form_id=7b30974ca1e564f2dc2d493c556a5aeb\n\n" as const
-                          }
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__fWrCt
-                            )}
-                          >
-                            {"Send"}
-                          </div>
-                        </Button>
                       </div>
+                      <Iframe
+                        data-plasmic-name={"iframe"}
+                        data-plasmic-override={overrides.iframe}
+                        className={classNames("__wab_instance", sty.iframe)}
+                        preview={true}
+                        src={
+                          "https://us21.list-manage.com/contact-form?u=e2b4dbc133397d49c88885733&form_id=7b30974ca1e564f2dc2d493c556a5aeb" as const
+                        }
+                      />
                     </div>
                   </div>
                   <div
@@ -352,7 +351,7 @@ const PlasmicDescendants = {
     "embedHtml",
     "columns",
     "container4",
-    "button",
+    "iframe",
     "img",
     "footer",
     "footerBottom"
@@ -361,9 +360,9 @@ const PlasmicDescendants = {
   header: ["header"],
   tagline: ["tagline"],
   embedHtml: ["embedHtml"],
-  columns: ["columns", "container4", "button", "img"],
-  container4: ["container4", "button"],
-  button: ["button"],
+  columns: ["columns", "container4", "iframe", "img"],
+  container4: ["container4", "iframe"],
+  iframe: ["iframe"],
   img: ["img"],
   footer: ["footer"],
   footerBottom: ["footerBottom"]
@@ -379,7 +378,7 @@ type NodeDefaultElementType = {
   embedHtml: typeof Embed;
   columns: "div";
   container4: "div";
-  button: typeof Button;
+  iframe: typeof Iframe;
   img: typeof p.PlasmicImg;
   footer: typeof Footer;
   footerBottom: typeof FooterBottom;
@@ -451,7 +450,7 @@ export const PlasmicGetInTouch = Object.assign(
     embedHtml: makeNodeComponent("embedHtml"),
     columns: makeNodeComponent("columns"),
     container4: makeNodeComponent("container4"),
-    button: makeNodeComponent("button"),
+    iframe: makeNodeComponent("iframe"),
     img: makeNodeComponent("img"),
     footer: makeNodeComponent("footer"),
     footerBottom: makeNodeComponent("footerBottom"),

@@ -363,8 +363,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           href={`/services`}
                         >
                           {hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "Remedial Education"
-                            : "\n\nRemedial Education"}
+                            ? "Remedial Education & Tutoring"
+                            : "Remedial Education & Tutoring\n"}
                         </a>
                       </div>
                       <div

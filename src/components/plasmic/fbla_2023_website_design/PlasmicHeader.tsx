@@ -284,23 +284,22 @@ function PlasmicHeader__RenderFunc(props: {
               '<script async src="https://cse.google.com/cse.js?cx=77f75c640e1704f95">\r\n</script>\r\n<div class="gcse-search"></div>' as const
             }
           />
-
-          <DonateButton
-            data-plasmic-name={"donateButton"}
-            data-plasmic-override={overrides.donateButton}
-            className={classNames("__wab_instance", sty.donateButton)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___1Ku5B
-              )}
-            >
-              {"DONATE"}
-            </div>
-          </DonateButton>
         </p.Stack>
+        <DonateButton
+          data-plasmic-name={"donateButton"}
+          data-plasmic-override={overrides.donateButton}
+          className={classNames("__wab_instance", sty.donateButton)}
+        >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___1Ku5B
+            )}
+          >
+            {"DONATE"}
+          </div>
+        </DonateButton>
       </p.Stack>
     </p.Stack>
   ) as React.ReactElement | null;

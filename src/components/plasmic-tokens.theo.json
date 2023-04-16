@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "Bright Blue",
+      "type": "color",
+      "value": "#4BB2F1",
+      "category": "color",
+      "meta": {
+        "projectId": "3gFepDhbdVBaDHe3ms9CNF",
+        "id": "Z5KafO7Xg"
+      }
+    },
+    {
       "name": "ClearDarkBlue",
       "type": "color",
       "value": "#126180",
@@ -88,6 +98,26 @@
       "meta": {
         "projectId": "3gFepDhbdVBaDHe3ms9CNF",
         "id": "k83QV_imD"
+      }
+    },
+    {
+      "name": "grad",
+      "type": "color",
+      "value": "#126180C7",
+      "category": "color",
+      "meta": {
+        "projectId": "3gFepDhbdVBaDHe3ms9CNF",
+        "id": "FHpvwimje"
+      }
+    },
+    {
+      "name": "verydarkblue",
+      "type": "color",
+      "value": "#06303F",
+      "category": "color",
+      "meta": {
+        "projectId": "3gFepDhbdVBaDHe3ms9CNF",
+        "id": "AAC8ubSJ8"
       }
     }
   ],
