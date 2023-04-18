@@ -11,7 +11,7 @@
   min-width: 0;
   min-height: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .root {
     width: 100%;
     min-width: 0;
@@ -44,7 +44,7 @@
   min-width: 0;
   padding: 50px 32px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .donate {
     padding-bottom: 35px;
     height: 100%;
@@ -96,13 +96,13 @@
   align-self: center;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .foreground3 {
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .foreground3 {
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -149,7 +149,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .h2__uf3EC {
     font-size: 32px;
   }
@@ -173,7 +173,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .text__eyvfw {
     font-size: 18px;
   }
@@ -205,13 +205,13 @@
   flex-direction: row;
   justify-content: center;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__jDb12 > :global(.__wab_flex-container) {
     flex-wrap: wrap;
     align-items: stretch;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__jDb12 {
     flex-wrap: wrap;
     align-items: stretch;
@@ -337,7 +337,7 @@
   min-width: 0;
   padding: 0px 64px 68px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .merchandise {
     width: 100%;
     min-width: 0;
@@ -478,7 +478,7 @@
   margin-left: 0px;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .text__szNoo {
     margin-top: calc(0px + 8px) !important;
   }
@@ -509,19 +509,19 @@
 .img__e4RFq > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__e4RFq {
     object-fit: cover;
     height: 100%;
     min-height: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__e4RFq > picture > img {
     object-fit: cover;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__e4RFq > :global(.__wab_img-spacer) > img {
     object-fit: cover;
   }
@@ -535,7 +535,7 @@
   top: auto;
   z-index: 1;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .button__vYdu:global(.__wab_instance) {
     width: 100%;
     min-width: 0;
@@ -582,19 +582,19 @@
 .img__q04Mh > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__q04Mh {
     object-fit: cover;
     height: 100%;
     min-height: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__q04Mh > picture > img {
     object-fit: cover;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__q04Mh > :global(.__wab_img-spacer) > img {
     object-fit: cover;
   }
@@ -608,7 +608,7 @@
   top: auto;
   z-index: 1;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .button__lgCtm:global(.__wab_instance) {
     width: 100%;
     min-width: 0;
@@ -650,18 +650,18 @@
 .img__xgmAb > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__xgmAb {
     object-fit: fill;
     height: auto;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__xgmAb > picture > img {
     object-fit: fill;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__xgmAb > :global(.__wab_img-spacer) > img {
     object-fit: fill;
   }
@@ -672,7 +672,7 @@
   width: 508px;
   align-self: center;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .button___4LD4:global(.__wab_instance) {
     width: 100%;
     min-width: 0;
@@ -714,18 +714,18 @@
 .img__pVuRp > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__pVuRp {
     object-fit: fill;
     height: auto;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__pVuRp > picture > img {
     object-fit: fill;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .img__pVuRp > :global(.__wab_img-spacer) > img {
     object-fit: fill;
   }
@@ -735,7 +735,7 @@
   position: relative;
   width: 591px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .button__zwuaj:global(.__wab_instance) {
     width: 100%;
     min-width: 0;
@@ -761,7 +761,7 @@
   position: relative;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .slider:global(.__wab_instance) {
     display: none;
   }
@@ -776,7 +776,7 @@
   min-width: 0;
   padding: 0px 64px 68px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .volunteer {
     width: 100%;
     min-width: 0;
@@ -824,7 +824,7 @@
   max-width: 1380px;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__xIxRo {
     display: flex;
     flex-direction: column;
@@ -832,7 +832,7 @@
     min-width: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__xIxRo > :global(.__wab_flex-container) {
     flex-direction: column;
     min-width: 0;
@@ -840,7 +840,7 @@
     width: calc(100% + 0px);
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__xIxRo > :global(.__wab_flex-container) > *,
   .freeBox__xIxRo > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .freeBox__xIxRo > :global(.__wab_flex-container) > picture > img,
@@ -852,7 +852,7 @@
     margin-left: 0px;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__xIxRo {
     display: flex;
     flex-direction: column;
@@ -1093,12 +1093,12 @@
 .serviceRow2 > :global(.__wab_flex-container) > :nth-child(3n + 3) {
   width: calc((100% - 3 * 30px) * 4 / 12);
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .serviceRow2 {
     flex-direction: row;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .serviceRow2 > :global(.__wab_flex-container) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1106,7 +1106,7 @@
     height: calc(100% + 15px);
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .serviceRow2 > :global(.__wab_flex-container) > *,
   .serviceRow2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .serviceRow2 > :global(.__wab_flex-container) > picture > img,
@@ -1118,13 +1118,13 @@
     margin-top: 15px;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .serviceRow2 {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .serviceRow2 > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * 30px) * 12 / 12);
   }

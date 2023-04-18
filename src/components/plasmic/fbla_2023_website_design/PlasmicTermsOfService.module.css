@@ -19,7 +19,7 @@
   position: relative;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .tagline:global(.__wab_instance) {
     flex-shrink: 0;
   }
@@ -45,7 +45,7 @@
   margin-top: 32px;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .h1 {
     font-size: 40px;
   }
@@ -59,7 +59,7 @@
   color: var(--token-k83QV_imD);
   padding: 32px 51px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .text__v9Szn {
     margin-right: 20px;
     margin-left: 23px;

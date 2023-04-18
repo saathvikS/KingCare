@@ -17,7 +17,7 @@
   min-width: 0;
   padding: 25px;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .headingTagline {
     padding-top: 61px;
     padding-bottom: 61px;
@@ -102,7 +102,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .slotTargetChildren {
     font-size: 40px;
   }
@@ -117,7 +117,7 @@
   display: flex;
   flex-direction: row;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .freeBox__dK6 {
     margin-top: calc(0px + 16px) !important;
   }
@@ -160,7 +160,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (min-width: 0px) and (max-width: 943px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .slotTargetSlot {
     font-size: 18px;
   }
