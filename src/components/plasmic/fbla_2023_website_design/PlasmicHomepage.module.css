@@ -139,7 +139,8 @@
   position: relative;
   margin-top: 56px;
   width: 597px;
-  margin-left: 34px;
+  margin-left: 0px;
+  align-self: center;
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .button___15Prz:global(.__wab_instance) {
@@ -552,7 +553,8 @@
   max-width: 100%;
   position: relative;
   width: 494px;
-  margin: 40px 0px 0px 28px;
+  align-self: center;
+  margin: 40px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 943px) {
   .button__cy2V2:global(.__wab_instance) {
