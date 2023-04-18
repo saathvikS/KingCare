@@ -371,9 +371,9 @@ function PlasmicTakeAction__RenderFunc(props: {
                         infinite={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? true
-                            : undefined
+                            : true
                         }
-                        pauseOnDotsHover={true}
+                        pauseOnDotsHover={false}
                         pauseOnFocus={false}
                         pauseOnHover={false}
                         slidesToShow={
@@ -381,6 +381,8 @@ function PlasmicTakeAction__RenderFunc(props: {
                             ? (3 as const)
                             : (3 as const)
                         }
+                        swipe={false}
+                        touchMove={false}
                         useCSS={true}
                         useTransform={true}
                         variableWidth={false}
