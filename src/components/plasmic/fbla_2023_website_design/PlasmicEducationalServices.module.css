@@ -35,12 +35,15 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  width: 1515px;
+  width: 100%;
+  min-width: 0;
 }
 .scrollParallax__vGxVt:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .freeBox {
   display: flex;
@@ -113,9 +116,9 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   align-items: stretch;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-direction: row;
   flex-wrap: nowrap;
   background: linear-gradient(#f2f2f2, #f2f2f2),
@@ -127,6 +130,7 @@
   margin-bottom: 50px;
   box-shadow: none;
   min-width: 0;
+  min-height: 0;
   padding: 0px;
 }
 .columns__zSxU > :nth-child(2n + 1) {
@@ -251,24 +255,28 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  width: 1705px;
+  width: 100%;
+  min-width: 0;
 }
 .scrollParallax__sFeJd:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .columns__tqayH {
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   align-items: stretch;
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-bottom: 40px;
   min-width: 0;
+  min-height: 0;
   padding: 8px 0px;
 }
 .columns__tqayH > :nth-child(2n + 1) {
@@ -438,7 +446,8 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  width: 1527px;
+  width: 100%;
+  min-width: 0;
 }
 .scrollParallax__kr9Jv:global(.__wab_instance) {
   max-width: 100%;
@@ -449,12 +458,13 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   align-items: stretch;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
+  min-height: 0;
   padding: 8px 0px;
 }
 .columns__rFmD5 > :nth-child(2n + 1) {
@@ -565,7 +575,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   align-items: stretch;
   flex-shrink: 1;
   flex-direction: row;
@@ -573,6 +583,7 @@
   margin-bottom: 40px;
   margin-top: 40px;
   min-width: 0;
+  min-height: 0;
   padding: 8px 0px;
 }
 .columns__wyL9L > :nth-child(2n + 1) {
