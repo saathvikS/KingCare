@@ -352,7 +352,7 @@ function PlasmicTakeAction__RenderFunc(props: {
                             : true
                         }
                         autoplaySpeed={2000 as const}
-                        centerMode={false}
+                        centerMode={true}
                         className={classNames("__wab_instance", sty.slider)}
                         dots={
                           hasVariant(globalVariants, "screen", "mobileOnly")
@@ -372,7 +372,11 @@ function PlasmicTakeAction__RenderFunc(props: {
                         pauseOnDotsHover={true}
                         pauseOnFocus={false}
                         pauseOnHover={false}
-                        slidesToShow={3 as const}
+                        slidesToShow={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? (4 as const)
+                            : (3 as const)
+                        }
                         useCSS={true}
                         useTransform={true}
                         variableWidth={false}
