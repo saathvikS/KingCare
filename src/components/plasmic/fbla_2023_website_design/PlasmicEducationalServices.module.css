@@ -436,9 +436,8 @@
     font-family: "Mako", sans-serif;
     text-align: center;
     font-size: 18px;
-    height: 100%;
+    height: auto;
     min-width: 0;
-    min-height: 0;
     padding: 32px;
   }
 }
