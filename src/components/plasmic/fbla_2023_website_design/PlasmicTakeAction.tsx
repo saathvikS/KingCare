@@ -119,8 +119,6 @@ function PlasmicTakeAction__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
-
       <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
@@ -534,6 +532,51 @@ function PlasmicTakeAction__RenderFunc(props: {
                               link={
                                 "https://king-care.swell.store/buy/e9DVv1q5" as const
                               }
+                              onClick={async event => {
+                                const $steps = {};
+                                $steps["updateStateVariable"] = true
+                                  ? (() => {
+                                      const actionArgs = {};
+                                      return __wrapUserFunction(
+                                        {
+                                          type: "InteractionLoc",
+                                          actionName: "updateVariable",
+                                          interactionUuid: "b6btq3QT3",
+                                          componentUuid: "xTZIRSRPVMm"
+                                        },
+                                        () =>
+                                          (({
+                                            variable,
+                                            value,
+                                            startIndex,
+                                            deleteCount
+                                          }) => {
+                                            const { objRoot, variablePath } =
+                                              variable;
+                                            undefined;
+                                          })?.apply(null, [actionArgs]),
+                                        actionArgs
+                                      );
+                                    })()
+                                  : undefined;
+                                if (
+                                  typeof $steps["updateStateVariable"] ===
+                                    "object" &&
+                                  typeof $steps["updateStateVariable"].then ===
+                                    "function"
+                                ) {
+                                  $steps["updateStateVariable"] =
+                                    await __wrapUserPromise(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "updateVariable",
+                                        interactionUuid: "b6btq3QT3",
+                                        componentUuid: "xTZIRSRPVMm"
+                                      },
+                                      $steps["updateStateVariable"]
+                                    );
+                                }
+                              }}
                             >
                               {"Buy Now"}
                             </Button>

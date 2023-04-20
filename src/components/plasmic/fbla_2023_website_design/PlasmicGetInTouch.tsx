@@ -112,8 +112,6 @@ function PlasmicGetInTouch__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
-
       <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
           as={"div"}

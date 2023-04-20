@@ -110,8 +110,6 @@ function PlasmicAboutUs__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
-
       <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
