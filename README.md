@@ -1,25 +1,10 @@
-This is a React project bootstrapped with [`create-plasmic-app`](https://www.npmjs.com/package/create-plasmic-app).
+# Kingcare (FBLA NLC 2023 Website Design)
+### A non-profit based in King County aiming to bring equality to all through various services
 
-## Getting Started
+By Anshu Aggarwal and Saathvik Somujayabalan
 
-First, run the development server:
+Copyright Statement:  This website contains copyrighted materials used under the multimedia guidelines and fair use exceptions of US copyright law, further use is prohibited.
 
-```bash
-npm run start
-```
+Live Website link: https://kingcare.website
 
-Open your browser to see the result.
-
-You can start editing your project in Plasmic Studio. The page auto-updates as you edit the project.
-
-## Learn More
-
-With Plasmic, you can enable non-developers on your team to publish pages and content into your website or app.
-
-To learn more about Plasmic, take a look at the following resources:
-
-- [Plasmic Website](https://www.plasmic.app/)
-- [Plasmic Documentation](https://docs.plasmic.app/learn/)
-- [Plasmic Slack Community](https://www.plasmic.app/slack)
-
-You can check out [the Plasmic GitHub repository](https://github.com/plasmicapp/plasmic) - your feedback and contributions are welcome!
+<img width="1280" alt="image" src="https://github.com/saathvikS/KingCare/assets/67754072/4b22a8b8-5e83-4664-ba13-dcaa6c8f7d7a">
